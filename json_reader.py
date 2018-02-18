@@ -24,9 +24,3 @@ def read_json(par, amount):
     for u in js['users']:
         users_d[u['screen_name']] = u[par]
     return users_d
-
-
-friends = read_json('status', 5)
-for k in friends:
-    print(k, '\n' + friends[k]['text'])
-    print("10")
